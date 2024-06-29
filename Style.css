@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #001427;
+    color: #ffb703;
+}
+
+.main_index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.choices{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 50px;
+}
+
+.choice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.choice:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+img:hover{
+    border: 3px solid yellow;
+}
+
+img{
+    border-radius: 50%;
+    height: 18vw;
+    width: 18vw;
+    object-fit: cover;
+}
+
+.score-board{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 4vw;
+    font-size: 3.5vh;
+}
+
+#user-score{
+    color: #ffecd1;
+}
+
+#Computer-score{
+    color: #ffecd1;
+}
+
+#massage{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 2rem;
+    color: #ffecd1;
+    width: 200px;
+    border-radius: 30px;
+}
+
+.mssage-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reset-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#reset-button {
+    background-color: #ffb703;
+    color: #001427;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#reset-button:hover {
+    background-color: #ffecd1;
+}
+
+@media (max-width: 768px) {
+    img {
+        width: 22vw;
+        height: 22vw;
+    }
+
+    .score-board {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 2vh;
+    }
+
+    .score p {
+        font-size: 1.75rem;
+    }
+
+    #massage {
+        font-size: 1.15rem;
+        padding: 10px 20px;
+    }
+
+    #reset-button {
+        font-size: 0.75rem;
+        padding: 6px 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    img {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .score-board {
+        flex-direction: column;
+        gap: 30px;
+        font-size: 1.8vh;
+        margin-top: 20px;
+    }
+
+    .score p {
+        font-size: 1.8rem;
+    }
+
+    #massage {
+        font-size: 1.25rem;
+        padding: 12px 22px;
+    }
+
+    #reset-button {
+        font-size: 1.25rem;
+        padding: 12px 24px;
+    }
+}
+
+
+img {
+    border-radius: 50%;
+    height: 18vw;
+    width: 18vw;
+    object-fit: cover;
+    transition: transform 2s ease;
+}
+
+@keyframes scaleUpDown {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(.75);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+img.scale-animation {
+    animation: scaleUpDown 0.4s ease;
+}
