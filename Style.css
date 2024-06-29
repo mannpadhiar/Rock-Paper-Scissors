@@ -101,9 +101,12 @@ img{
 }
 
 @media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
     img {
-        width: 22vw;
-        height: 22vw;
+        width: 28vw;
+        height: 28vw;
     }
 
     .score-board {
@@ -125,46 +128,6 @@ img{
         font-size: 0.75rem;
         padding: 6px 14px;
     }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.8rem;
-    }
-    img {
-        width: 25vw;
-        height: 25vw;
-    }
-
-    .score-board {
-        flex-direction: column;
-        gap: 30px;
-        font-size: 1.8vh;
-        margin-top: 20px;
-    }
-
-    .score p {
-        font-size: 1.8rem;
-    }
-
-    #massage {
-        font-size: 1.25rem;
-        padding: 12px 22px;
-    }
-
-    #reset-button {
-        font-size: 1.25rem;
-        padding: 12px 24px;
-    }
-}
-
-
-img {
-    border-radius: 50%;
-    height: 18vw;
-    width: 18vw;
-    object-fit: cover;
-    transition: transform 2s ease;
 }
 
 @keyframes scaleUpDown {
